@@ -1,12 +1,8 @@
 package hirs.attestationca.persist.provision.helper;
 
 import hirs.attestationca.persist.entity.manager.CertificateRepository;
-import hirs.attestationca.persist.provision.helper.CredentialManagementHelper;
 import hirs.attestationca.persist.entity.userdefined.Certificate;
-import hirs.utils.digest.Digest;
 import org.apache.commons.io.IOUtils;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -37,7 +33,7 @@ public class CredentialManagementHelperTest {
      */
     @BeforeEach
     public void setUp() {
-//        certificateRepository = mock(CertificateRepository.class);
+        //certificateRepository = mock(CertificateRepository.class);
         MockitoAnnotations.initMocks(this);
     }
 
