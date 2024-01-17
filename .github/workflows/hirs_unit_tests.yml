@@ -35,7 +35,8 @@ jobs:
       run: |
         
         # log into and run docker (note: must set up secrets in github for ghcr username and access_token)
-        echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $ --password-stdin
+        # echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $ --password-stdin
+        echo ${{ secrets.GIT_HUB_MYTEMPPAT }} | docker login ghcr.io -u ${{ secrets.GIT_HUB_MYUSERNAME }} --password-stdin
         
         # docker run options:
         #   create a mount between curr directory on the runner and the HIRS folder created by the cloning of HIRS repo
